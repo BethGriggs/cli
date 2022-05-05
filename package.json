@@ -211,6 +211,7 @@
     "preversion": "bash scripts/update-authors.sh && git add AUTHORS && git commit -m \"chore: update AUTHORS\" || true",
     "licenses": "licensee --production --errors-only",
     "test": "tap",
+    "test-citgm": "tap --no-color",
     "test-all": "npm run test --if-present --workspaces --include-workspace-root",
     "snap": "tap",
     "postsnap": "make -s docs",
